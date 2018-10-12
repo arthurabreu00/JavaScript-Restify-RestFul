@@ -1,7 +1,7 @@
 # JavaScript-Restify-RestFul
 
 
-[!(https://imgur.com/a/9qTArv2)]
+[![Arquitetura](https://i.imgur.com/y38RR1M.png)]
 
 
 ### CONSTRUIR DESCRIÇÃO
