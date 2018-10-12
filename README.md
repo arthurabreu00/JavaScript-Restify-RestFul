@@ -1,7 +1,7 @@
 # JavaScript-Restify-RestFul
 
 
-https://imgur.com/a/9qTArv2
+[![Arquiteura]https://imgur.com/a/9qTArv2]
 
 
 ### CONSTRUIR DESCRIÇÃO
