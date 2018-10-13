@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -9,7 +10,6 @@
   <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
   <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
   <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
-  <link rel="stylesheet" href="edit.css">
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
@@ -19,9 +19,9 @@
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="#" class="logo">
+    <a href="index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><img class=""></span>
+      <span class="logo-mini">HCODE</span>
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg">HCODE</span>
     </a>
@@ -139,7 +139,7 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body no-padding">
-              <table class="table table-striped" >
+              <table class="table table-striped">
                 <thead>
                   <tr>
                     <th style="width: 10px">Foto</th>
@@ -151,6 +151,8 @@
                   </tr>
                 </thead>
                 <tbody id="table-users">
+
+                                   
                   
                 </tbody>
               </table>
@@ -182,7 +184,7 @@
               <!-- small box -->
               <div class="small-box bg-yellow">
                 <div class="inner">
-                  <h3 id="number-admins">0</h3>
+                  <h3 id="number-users-admin">0</h3>
           
                   <p>Administradores</p>
                 </div>
@@ -204,30 +206,29 @@
               <div class="box-body">
                 <div class="form-group">
                   <label for="exampleInputName">Nome</label>
-                  <input type="text" class="form-control" id="exampleInputName"  placeholder="Digite o nome do usuário" name="name">
+                  <input type="text" required class="form-control" id="exampleInputName" placeholder="Digite o nome do usuário" name="name">
                 </div>
-                <div class="form-group"> 
+                <div class="form-group">
                   <label>Gênero</label>
                   <div class="radio">
                     <label for="exampleInputGenderM">
-                      <input type="radio" id="exampleInputGenderM" value = "M" name="gender" checked>
+                      <input type="radio" id="exampleInputGenderM" name="gender" value="M" checked>
                       Masculino</label>
                   </div>
                   <div class="radio">
                     <label for="exampleInputGenderF">
-                      <input type="radio" id="exampleInputGenderF"  value = "F" name="gender">
+                      <input type="radio" id="exampleInputGenderF" name="gender" value="F">
                       Feminino</label>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputBirth">Nascimento</label>
-                  <input type="date" class="form-control" id="exampleInputBirth" name="birth" >
+                  <input type="date" class="form-control" id="exampleInputBirth" name="birth">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputCountry">País</label>
-                  <select class="form-control" id="exampleInputCountry" name="country" > 
-                    <option value="" selected="selected" >Selecione um país</option>
-                    
+                  <select class="form-control" id="exampleInputCountry" name="country">
+                    <option value="" selected="selected">Selecione um país</option>
                     <option value="United States">United States</option>
                     <option value="United Kingdom">United Kingdom</option>
                     <option value="Afghanistan">Afghanistan</option>
@@ -280,10 +281,9 @@
                     <option value="Comoros">Comoros</option>
                     <option value="Congo">Congo</option>
                     <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
-                    <option value="Cook Islands">Cook Islands </option>
-                    <option value="Costa Rica">Costa Rica </option>
-                    <option value="Cote D ivoire"> Cote D ivoire </option>
-
+                    <option value="Cook Islands">Cook Islands</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="Cote D'ivoire">Cote D'ivoire</option>
                     <option value="Croatia">Croatia</option>
                     <option value="Cuba">Cuba</option>
                     <option value="Cyprus">Cyprus</option>
@@ -342,11 +342,11 @@
                     <option value="Kazakhstan">Kazakhstan</option>
                     <option value="Kenya">Kenya</option>
                     <option value="Kiribati">Kiribati</option>
-                    <option value="Korea, Democratic Peoples Republic of">Korea, Democratic Peoples Republic of</option>
+                    <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
                     <option value="Korea, Republic of">Korea, Republic of</option>
                     <option value="Kuwait">Kuwait</option>
                     <option value="Kyrgyzstan">Kyrgyzstan</option>
-                    <option value="Lao Peoples Democratic Republic">Lao Peoples Democratic Republic </option>
+                    <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
                     <option value="Latvia">Latvia</option>
                     <option value="Lebanon">Lebanon</option>
                     <option value="Lesotho">Lesotho</option>
@@ -474,11 +474,11 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">E-mail</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Digite o e-mail" name="email" >
+                  <input type="email" required class="form-control" id="exampleInputEmail" placeholder="Digite o e-mail" name="email">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Senha</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Crie uma senha" name="password" >
+                  <input type="password" required class="form-control" id="exampleInputPassword" placeholder="Crie uma senha" name="password">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputFile">Foto</label>
@@ -486,7 +486,7 @@
                 </div>
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" name="admin" id="examplerInputAdmim"> Administrador
+                    <input type="checkbox" name="admin" id="exampleInputAdmin"> Administrador
                   </label>
                 </div>
               </div>
@@ -497,7 +497,7 @@
             </form>
           </div>
 
-          <div class="box box-primary"  id="box-user-update" style="display: none">
+          <div class="box box-primary" id="box-user-update" style="display:none;">
             <div class="box-header with-border">
               <h3 class="box-title">Editar Usuário</h3>
             </div>
@@ -507,30 +507,29 @@
               <div class="box-body">
                 <div class="form-group">
                   <label for="exampleInputName-update">Nome</label>
-                  <input type="text" class="form-control" id="exampleInputName-update"  placeholder="Digite o nome do usuário" name="name">
+                  <input type="text" required class="form-control" id="exampleInputName-update" placeholder="Digite o nome do usuário" name="name">
                 </div>
-                <div class="form-group"> 
+                <div class="form-group">
                   <label>Gênero</label>
                   <div class="radio">
-                    <label for="exampleInputGenderM">
-                      <input type="radio" id="exampleInputGenderM-update" name="gender" value="M" checked>
-                      Masculino</label>
+                    <label for="exampleInputGenderM-update">
+                      <input type="radio" id="exampleInputGenderM-update" name="gender" value="M" checked> Masculino
+                    </label>
                   </div>
                   <div class="radio">
-                    <label for="exampleInputGenderF">
-                      <input type="radio" id="exampleInputGenderF-update" name="gender" value="F">
-                      Feminino</label>
+                    <label for="exampleInputGenderF-update">
+                      <input type="radio" id="exampleInputGenderF-update" name="gender" value="F"> Feminino
+                    </label>
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputBirth">Nascimento</label>
-                  <input type="date" class="form-control" id="exampleInputBirth-update" name="birth" >
+                  <label for="exampleInputBirth-update">Nascimento</label>
+                  <input type="date" class="form-control" id="exampleInputBirth-update" name="birth">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputCountry">País</label>
-                  <select class="form-control" id="exampleInputCountry-update" name="country" > 
-                    <option value="" selected="selected" >Selecione um país</option>
-                    
+                  <label for="exampleInputCountry-update">País</label>
+                  <select class="form-control" id="exampleInputCountry-update" name="country">
+                    <option value="" selected="selected">Selecione um país</option>
                     <option value="United States">United States</option>
                     <option value="United Kingdom">United Kingdom</option>
                     <option value="Afghanistan">Afghanistan</option>
@@ -583,10 +582,9 @@
                     <option value="Comoros">Comoros</option>
                     <option value="Congo">Congo</option>
                     <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
-                    <option value="Cook Islands">Cook Islands </option>
-                    <option value="Costa Rica">Costa Rica </option>
-                    <option value="Cote D ivoire"> Cote D ivoire </option>
-
+                    <option value="Cook Islands">Cook Islands</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="Cote D'ivoire">Cote D'ivoire</option>
                     <option value="Croatia">Croatia</option>
                     <option value="Cuba">Cuba</option>
                     <option value="Cyprus">Cyprus</option>
@@ -645,11 +643,11 @@
                     <option value="Kazakhstan">Kazakhstan</option>
                     <option value="Kenya">Kenya</option>
                     <option value="Kiribati">Kiribati</option>
-                    <option value="Korea, Democratic Peoples Republic of">Korea, Democratic Peoples Republic of</option>
+                    <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
                     <option value="Korea, Republic of">Korea, Republic of</option>
                     <option value="Kuwait">Kuwait</option>
                     <option value="Kyrgyzstan">Kyrgyzstan</option>
-                    <option value="Lao Peoples Democratic Republic">Lao Peoples Democratic Republic </option>
+                    <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
                     <option value="Latvia">Latvia</option>
                     <option value="Lebanon">Lebanon</option>
                     <option value="Lesotho">Lesotho</option>
@@ -776,28 +774,28 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">E-mail</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1-update" placeholder="Digite o e-mail" name="email" >
+                  <label for="exampleInputEmail1-update">E-mail</label>
+                  <input type="email" required class="form-control" id="exampleInputEmail-update" placeholder="Digite o e-mail" name="email">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Senha</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1-update" placeholder="Crie uma senha" name="password" >
+                  <label for="exampleInputPassword1-update">Senha</label>
+                  <input type="password" required class="form-control" id="exampleInputPassword-update" placeholder="Crie uma senha" name="password">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputFile">Foto</label>
-                  <img src="dist/img/avatar04.png" class="photo" />
+                  <img src="dist/img/boxed-bg.jpg" class="photo" style="max-height: 128px;">
+                  <label for="exampleInputFile-update">Foto</label>
                   <input type="file" id="exampleInputFile-update" name="photo">
                 </div>
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" name="admin" id="examplerInputAdmim-update"> Administrador
-                  </label> 
+                    <input type="checkbox" name="admin" id="exampleInputAdmin-update"> Administrador
+                  </label>
                 </div>
               </div>
-              <!-- /.box-body -->          
+              <!-- /.box-body -->
               <div class="box-footer">
                 <button type="submit" class="btn btn-primary">Salvar</button>
-                <button type="button" class="btn btn-default btn-cancel" >Cancelar</button>
+                <button type="button" class="btn btn-default btn-cancel">Cancelar</button>
               </div>
             </form>
           </div>
@@ -821,12 +819,12 @@
   </footer>
 
 </div>
-  <script src="classes/HttpRequest.js"></script>
-  <script src="classes/Utils.js"></script>
-  <script src="models/user.js"></script>
-  <script src="controllers/UserController.js"></script>
-  <script src="index.js"></script>
 
-
+<script src="classes/Fetch.js"></script>
+<script src="classes/HttpRequest.js"></script>
+<script src="classes/Utils.js"></script>
+<script src="models/User.js"></script>
+<script src="controllers/UserController.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
